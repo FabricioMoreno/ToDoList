@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoList</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Archivo+Narrow&display=swap" rel="stylesheet">
     <!-- MY STYLUS -->
@@ -25,14 +27,14 @@
         </div> -->
         <header class="header">
             <div class="search" id="search">
-                <input type="text" class="search_to-search" id="toSearch" autocomplete="off">
+                <input type="text" class="search_to-search" id="toSearch" placeholder="Buscar tags" autocomplete="off">
                 <button class="search_btn-to-search" data-btn="search-tag">Buscar</button>
             </div>
             <h1 class="header-title">TO DO LIST</h1>
             <div class="add-task"> 
-                <textarea class="add-task_content" ></textarea>
+                <textarea class="add-task_content" id="taskContentToAdd" ></textarea>
                 <div class="header_footer">
-                    <div class="tag">
+                    <div class="header_tag">
                         <label for="tag-name">Tag:</label>
                         <input type="text" class="tag-name" id="tag-name" placeholder="tag">
                     </div>
@@ -41,46 +43,13 @@
             </div>
         </header>
 
-        <ul class="list">
-            <li class="task 88 ">
-                <label class="task_content">Pay Bills
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem ullam assumenda aperiam veritatis quisquam omnis voluptatum praesentium repellat beatae et, tempore a deserunt qui dolores nemo aliquam, minus iste.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam reprehenderit nobis suscipit consectetur dicta facere aut voluptatem atque repudiandae eveniet accusamus officia, officiis, aperiam ex similique harum pariatur ut.
-                </label>
-                <textarea class="task_content--edit"></textarea>
-                <div class="task_options">
-                    <button class="task_btn-edit">Edit</button>
-                    <button class="task_btn-delete">Delete</button>
-                </div>
-            </li>
-            <li class="task 88 ">
-                <label class="task_content">Pay Bills
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem ullam assumenda aperiam veritatis quisquam omnis voluptatum praesentium repellat beatae et, tempore a deserunt qui dolores nemo aliquam, minus iste.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam reprehenderit nobis suscipit consectetur dicta facere aut voluptatem atque repudiandae eveniet accusamus officia, officiis, aperiam ex similique harum pariatur ut.
-                </label>
-                <textarea class="task_content--edit"></textarea>
-                <div class="task_options">
-                    <button class="task_btn-edit">Edit</button>
-                    <button class="task_btn-delete">Delete</button>
-                </div>
-            </li>
-
-            <li class="task 88 editMode">
-                <label class="task_content">Pay Bills
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, autem ullam assumenda aperiam veritatis quisquam omnis voluptatum praesentium repellat beatae et, tempore a deserunt qui dolores nemo aliquam, minus iste.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laboriosam reprehenderit nobis suscipit consectetur dicta facere aut voluptatem atque repudiandae eveniet accusamus officia, officiis, aperiam ex similique harum pariatur ut.
-                </label>
-                <textarea class="task_content--edit"></textarea>
-                <div class="task_options">
-                    <button class="task_btn-edit">Edit</button>
-                    <button class="task_btn-delete">Delete</button>
-                </div>
-            </li>
-            
+        <ul class="list" id="listOfTasks">
+        <!----------------TASKS HERE!!!!!!!! ------------>
         </ul>
 
         
     </div>
-<script src="./js/app.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>

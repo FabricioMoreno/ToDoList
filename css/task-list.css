@@ -9,7 +9,7 @@
     line-height: 40px;
     width: 237px;
 }
-.task_btn-edit,.task_btn-delete {
+.task_btn-edit,.task_btn-delete,.task_btn-listo {
     background: none;
     border: none;
     color: #888;
@@ -46,16 +46,54 @@
     font-family: Lato, sans-serif;
     color: #888;
 }
+.task_tag
+{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.task_tag-content{
+    padding: 8.5px;
+    background:#6AB187;
+    border-radius: 5px;
+}
+.icon-tag
+{
+    font-size: 15px;
+    margin-right: 5px;
+}
 
   /* Edit Task */
 ul li textarea {
     display:none;
 }
-
+.task_btn-listo
+{
+    display: none;
+}
+ul li.editMode .task_btn-listo
+{
+    display: inline-block;
+}
+ul li.editMode .task_btn-edit{
+    display: none;
+}
 ul li.editMode textarea {
     display:block;
 }
 
 ul li.editMode label {
     display:none;
+}
+
+ul li label:hover
+{
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+ul li label.check-task
+{
+    cursor: default;
+    text-decoration: line-through;
 }
