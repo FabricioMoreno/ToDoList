@@ -1,0 +1,61 @@
+.task
+{
+    padding: 20px 5%;
+    border-bottom: 1px solid #eee;
+}
+.task_content
+{
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+}
+.task_btn-edit,.task_btn-delete {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    margin: 12px 0 0;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+.task_btn-edit:hover {
+    color: #333;
+
+}
+.task_btn-delete:hover {
+
+    color: #CF2323;
+}
+.task_content--edit 
+{
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    resize: none;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 130px;
+    max-height: none;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+
+  /* Edit Task */
+ul li textarea {
+    display:none;
+}
+
+ul li.editMode textarea {
+    display:block;
+}
+
+ul li.editMode label {
+    display:none;
+}
