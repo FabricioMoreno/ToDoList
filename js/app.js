@@ -7,9 +7,12 @@ const list = new List()
 function detectComponent(e){
     const target = e.target.dataset
     
-    if(target.btn === "search"){
+    if(target.btn === "search-tag"){
         const content = document.getElementById('toSearch').value
         list.search(content)
+    }
+    if(target.btn === 'add-task'){
+        console.log('Aquiii')
     }
     
 }
