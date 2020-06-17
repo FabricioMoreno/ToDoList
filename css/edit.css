@@ -1,0 +1,33 @@
+ul li textarea {
+    display:none;
+}
+.task_btn-listo
+{
+    display: none;
+}
+ul li.editMode .task_btn-listo
+{
+    display: inline-block;
+}
+ul li.editMode .task_btn-edit{
+    display: none;
+}
+ul li.editMode textarea {
+    display:block;
+}
+
+ul li.editMode label {
+    display:none;
+}
+
+ul li label:hover
+{
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+ul li label.check-task
+{
+    cursor: default;
+    text-decoration: line-through;
+}

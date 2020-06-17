@@ -16,8 +16,8 @@ function detectComponent(e){
         let content = document.getElementById('taskContentToAdd')
         const nameTag = document.getElementById('tag-name')
         list.addTask(content.value,nameTag.value)
-        content.value = ' ' ;   
-        nameTag.value = ' '
+        content.value = '' ;   
+        nameTag.value = ''
     }
 
     if(target.btn === 'edit-task'){

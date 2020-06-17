@@ -14,13 +14,13 @@ export default class List {
     }
 
     addTask(content,tag){
-        if(!content){
+        if(!content || /^\s*$/.test(content)){
             swal("Este campo no puede estar vacio","", "error");
             return
         }
         const list = document.getElementById('listOfTasks')
         const newTask = document.createElement('li')
-        let nameTag = tag || 'anonymous-tag'
+        let nameTag = (!tag || /^\s*$/.test(tag))? 'anonymous-tag' : tag;
         newTask.setAttribute('class', `task ${nameTag}`)
         newTask.innerHTML = `<div class="task_tag"><span class="task_tag-content"><i class="fas fa-tags icon-tag"></i>${nameTag}</span></div>
                             <label class="task_content" data-btn="check" >${content}</label>
@@ -43,6 +43,12 @@ export default class List {
         const theActualTask = e.path[2]
         let contentOfTheActualTask= theActualTask.childNodes[2]
         let contentOfTheEditTask = theActualTask.childNodes[4]
+        
+        /*I am testing if the actual text is empty  */
+        if(!contentOfTheEditTask.value|| /^\s*$/.test(contentOfTheEditTask.value)){
+            swal("Este campo no puede estar vacio","", "error");
+            return
+        }
         contentOfTheActualTask.textContent = contentOfTheEditTask.value
         
         theActualTask.classList.remove('editMode')

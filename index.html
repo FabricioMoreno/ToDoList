@@ -11,20 +11,10 @@
     <!-- MY STYLUS -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/task-list.css">
+    <link rel="stylesheet" href="./css/edit.css">
 </head>
 <body>
     <div class="father" id="father">
-        <!-- <div class="search">
-            <input type="text" name="" id="toSearch" autocomplete="off">
-            <button data-btn="search">Buscar</button>
-        </div>
-        <div class="task aaa" data-component="task" id="1">
-            <div>
-                <div>
-                    <p>Aqui 1</p>
-                </div>
-            </div>
-        </div> -->
         <header class="header">
             <div class="search" id="search">
                 <input type="text" class="search_to-search" id="toSearch" placeholder="Buscar tags" autocomplete="off">
@@ -32,7 +22,7 @@
             </div>
             <h1 class="header-title">TO DO LIST</h1>
             <div class="add-task"> 
-                <textarea class="add-task_content" id="taskContentToAdd" ></textarea>
+                <textarea class="add-task_content" id="taskContentToAdd" placeholder="Escriba su nueva tarea ..."></textarea>
                 <div class="header_footer">
                     <div class="header_tag">
                         <label for="tag-name">Tag:</label>
@@ -45,9 +35,7 @@
 
         <ul class="list" id="listOfTasks">
         <!----------------TASKS HERE!!!!!!!! ------------>
-        </ul>
-
-        
+        </ul>     
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/app.js" type="module"></script>
