@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoList</title>
+    <link rel="stylesheet" href="./css/task-list.css">
+</head>
+<body>
+    <div class="father" id="father">
+        <!-- <div class="search">
+            <input type="text" name="" id="toSearch" autocomplete="off">
+            <button data-btn="search">Buscar</button>
+        </div>
+        <div class="task aaa" data-component="task" id="1">
+            <div>
+                <div>
+                    <p>Aqui 1</p>
+                </div>
+            </div>
+        </div> -->
+        <header class="header">
+            <div class="search" id="search">
+                <input type="text" name="" id="toSearch" autocomplete="off">
+                <button data-btn="search">Buscar</button>
+            </div>
+            <h1 class="header-title">TO DO LIST</h1>
+            <div class="add-task"> 
+                <textarea class="add-task_content" ></textarea>
+            </div>
+        </header>
+
+        <ul class="list">
+            <li class="task 88">
+                <input type="checkbox">
+                <label>Pay Bills</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+            <li class="task 88">
+                <input type="checkbox">
+                <label>Pay Bills</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+
+            <li class="editMode">
+                <input type="checkbox">
+                <label>Go Shopping</label>
+                <input type="text" value="Go Shopping">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </li>
+            
+        </ul>
+
+        
+    </div>
+<script src="./js/app.js" type="module"></script>
+</body>
+</html>
