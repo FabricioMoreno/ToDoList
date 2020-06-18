@@ -32,9 +32,9 @@ export default class List {
                             <label class="task_content" data-btn="check" >${content}</label>
                             <textarea class="task_content--edit">${content}</textarea>
                             <div class="task_options">
-                                <button class="task_btn-listo" data-btn="listo">Listo</button>
-                                <button class="task_btn-edit" data-btn="edit-task">Edit</button>
-                                <button class="task_btn-delete" data-btn="delete-task">Delete</button>
+                                <button class="task_btn-listo" data-btn="listo"><i class="fas fa-check icon-check"></i>Listo</button>
+                                <button class="task_btn-edit" data-btn="edit-task"><i class="fas fa-edit icon-edit"></i>Edit</button>
+                                <button class="task_btn-delete" data-btn="delete-task"><i class="far fa-trash-alt icon-delete"></i>Delete</button>
                             </div>
                         `
         this.allTasks.push(newTask)

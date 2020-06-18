@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoList</title>
+    <link rel="shortcut icon" type="image/svg" href="./favicon.svg">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- FONTS -->
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/task-list.css">
     <link rel="stylesheet" href="./css/edit.css">
+    <link rel="stylesheet" href="./css/icon.css">
 </head>
 <body>
     <div class="father" id="father">
@@ -20,7 +22,7 @@
                 <button class="search_show-all-tasks" data-btn="showAllTasks">Mostrar todas las tareas</button>
                 <div class="search-container">
                     <input type="text" class="search_to-search" id="toSearch" placeholder="Buscar tags" autocomplete="off">
-                    <button class="search_btn-to-search" data-btn="search-tag">Buscar</button>
+                    <button class="search_btn-to-search" data-btn="search-tag">Buscar<i class="fas fa-search icon-search"></i></button>
                 </div>
             </div>
             <h1 class="header-title">TO DO LIST</h1>
@@ -31,7 +33,7 @@
                         <label for="tag-name">Tag:</label>
                         <input type="text" class="tag-name" id="tag-name" placeholder="tag">
                     </div>
-                    <button class="add-task_btn" data-btn="add-task">Agregar</button>
+                    <button class="add-task_btn" data-btn="add-task"><i class="fas fa-plus icon-add"></i>Agregar</button>
                 </div>
             </div>
         </header>
