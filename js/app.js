@@ -36,6 +36,9 @@ function detectComponent(e){
         list.checkTask(e)
     }
     
+    if(target.btn === 'showAllTasks'){
+        list.showAllTasks()
+    }
 }
 
 function enter(e){

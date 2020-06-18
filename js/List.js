@@ -16,7 +16,6 @@ export default class List {
 
     searchTag(valueToSearch){
         const tasksFiltered = this.allTasks.filter(task=>task.classList[1] === valueToSearch)
-        console.log(this.allTasks)
         this.showTasksFiltered(tasksFiltered)
     }
 
@@ -71,5 +70,13 @@ export default class List {
     checkTask(e){
         const checkThisTask = e.target
         checkThisTask.classList.add('check-task')
+    }
+
+    showAllTasks(){
+        const listOfTasks = document.getElementById('listOfTasks')
+        listOfTasks.innerHTML = ''
+        for(const task of this.allTasks.reverse()){
+            listOfTasks.appendChild(task)
+        }
     }
 }

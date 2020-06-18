@@ -6,8 +6,8 @@
 .task_content
 {
     font-size: 18px;
-    line-height: 40px;
-    width: 237px;
+    line-height: 31px;
+    white-space: pre-wrap;
 }
 .task_btn-edit,.task_btn-delete,.task_btn-listo {
     background: none;
@@ -33,7 +33,7 @@
 {
     margin: 0;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 23px;
     padding: 10px;
     border: 1px solid #ddd;
     background: #fff;
