@@ -1,11 +1,15 @@
 .icon-search
 {
-    margin-left: 4px;
+    margin-left: 3.5px;
+}
+.icon-show
+{
+    margin-right: 3px;
 }
 .icon-add
 {
     margin-right: 2px;
 }
 .icon-edit,.icon-delete,.icon-check{
-    margin-right: 2px;
+    margin-right: 3px;
 }

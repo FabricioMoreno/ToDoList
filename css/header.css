@@ -61,6 +61,13 @@
     font-size: 19px;
     letter-spacing: 1.2pt;
 }
+.search_show-all-tasks:hover
+{
+    
+    background-color: #8d490e;
+    box-shadow: 0 4.5px 0 #c27028;
+    color: #F4CC70;
+}
 @media screen and (min-width:871px){
     .search_show-all-tasks
     {
@@ -97,9 +104,11 @@
     font-size: 19px;
     letter-spacing: 1.2pt;
 }
-.search_btn-to-search:active
+.search_btn-to-search:hover
 {
     box-shadow: 0 4.5px 0 #c27028;
+    background-color: #8d490e;
+    color: #F4CC70;
 }
 .search_btn-to-search:focus
 {
