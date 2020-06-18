@@ -1,16 +1,23 @@
 export default class List {
-    showTasks(tasks){
-        (tasks.length === 0)?console.log('No hay tareas con ese nombre'):undefined;
-
+    constructor(){
+        this.allTasks = []
+    }
+    showTasksFiltered(tasks){
+        if(tasks.length === 0){
+            swal("No existe ese tag","", "error");
+            return
+        }
+        const listOfTasks = document.getElementById('listOfTasks')
+        listOfTasks.innerHTML = ''
         for(const task of tasks){
-            console.log(task)
+            listOfTasks.appendChild(task)
         }
     }
 
     searchTag(valueToSearch){
-        const tasks = [...document.getElementsByClassName('task')]
-        const tasksFiltered = tasks.filter(task=>task.classList[1] === valueToSearch)
-        this.showTasks(tasksFiltered)
+        const tasksFiltered = this.allTasks.filter(task=>task.classList[1] === valueToSearch)
+        console.log(this.allTasks)
+        this.showTasksFiltered(tasksFiltered)
     }
 
     addTask(content,tag){
@@ -31,6 +38,7 @@ export default class List {
                                 <button class="task_btn-delete" data-btn="delete-task">Delete</button>
                             </div>
                         `
+        this.allTasks.push(newTask)
         list.insertBefore(newTask, list.childNodes[0]);
     }
 
@@ -43,7 +51,7 @@ export default class List {
         const theActualTask = e.path[2]
         let contentOfTheActualTask= theActualTask.childNodes[2]
         let contentOfTheEditTask = theActualTask.childNodes[4]
-        
+
         /*I am testing if the actual text is empty  */
         if(!contentOfTheEditTask.value|| /^\s*$/.test(contentOfTheEditTask.value)){
             swal("Este campo no puede estar vacio","", "error");
