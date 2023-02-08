@@ -69,7 +69,7 @@ export default class List {
 
     checkTask(e){
         const checkThisTask = e.target
-        checkThisTask.classList.add('check-task')
+        checkThisTask.classList.toggle('check-task')
     }
 
     showAllTasks(){

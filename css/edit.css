@@ -28,6 +28,10 @@ ul li label:hover
 
 ul li label.check-task
 {
-    cursor: default;
     text-decoration: line-through;
+}
+
+ul li label.check-task:hover{
+    cursor:pointer;
+    text-decoration: none;
 }
