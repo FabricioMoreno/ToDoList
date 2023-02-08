@@ -42,12 +42,12 @@ export default class List {
     }
 
     editTask(e){
-        const theActualTask = e.path[2]
+        const theActualTask = e.composedPath()[2]
         theActualTask.classList.add('editMode')    
     }
 
     ready(e){
-        const theActualTask = e.path[2]
+        const theActualTask = e.composedPath()[2]
         let contentOfTheActualTask= theActualTask.childNodes[2]
         let contentOfTheEditTask = theActualTask.childNodes[4]
 
@@ -63,7 +63,7 @@ export default class List {
     }
     
     deleteTask(e){
-        const theActualTask = e.path[2];
+        const theActualTask = e.composedPath()[2];
         theActualTask.remove()
     }
 
